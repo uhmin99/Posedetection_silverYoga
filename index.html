@@ -48,8 +48,6 @@
         init();
 
         async function init() {
-
-            
             const modelURL = URL + "model.json";
             const metadataURL = URL + "metadata.json";
 
@@ -138,9 +136,9 @@
         check.click(function(){
         $("p").toggle();
         
-        function show(){
-            //on off function for switch
-            
+        async function show(){
+            //on off function to show or not show user cam 
+            //used for on/off switch
             var face = document.getElementById("canvas");
             if (face.style.display === "none") {
                 face.style.display = "block";
