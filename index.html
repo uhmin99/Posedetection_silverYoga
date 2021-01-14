@@ -75,6 +75,16 @@
             } 
             
         }
+        async function show(){
+            //on off function to show or not show user cam 
+            //used for on/off switch
+            var face = document.getElementById("canvas");
+            if (face.style.display === "none") {
+                face.style.display = "block";
+            } else{
+                face.style.display = "none";
+            }
+        }
 
         async function loop(timestamp) {
             webcam.update(); // update the webcam frame
@@ -136,16 +146,7 @@
         check.click(function(){
         $("p").toggle();
         
-        async function show(){
-            //on off function to show or not show user cam 
-            //used for on/off switch
-            var face = document.getElementById("canvas");
-            if (face.style.display === "none") {
-                face.style.display = "block";
-            } else{
-                face.style.display = "none";
-            }
-        }
+        
 });
     </script>
 
