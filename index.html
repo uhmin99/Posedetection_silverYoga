@@ -9,15 +9,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
-    <title>그로윈 스쿼트</title>
+    <title>Silver Yoga 자세 교정 AI</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container mt-5">
 
         </div>
-        <h1>자세 인식</h1>
-        <button class="btn btn-primary"type="button" onclick="init()">시작</button>
+        <h1>동작 인식</h1>
+        <!-- <button class="btn btn-primary"type="button" onclick="init()">시작</button> -->
+        <label class="switch">
+            <input type="checkbox" onclick="init()">
+            <span class="slider round"></span>
+        </label>
+        <p>동작인식 OFF</p><p style="display:none;">동작인식 ON</p>
         <div><canvas id="canvas" height="300"></canvas></div>
         <div id="label-container"></div>
     </div>
@@ -125,6 +131,11 @@
                 }
             }
         }
+
+        var check = $("input[type='checkbox']");
+        check.click(function(){
+	    $("p").toggle();
+});
     </script>
 
 </body>
