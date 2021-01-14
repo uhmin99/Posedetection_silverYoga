@@ -18,7 +18,7 @@
 
         </div>
         <label class="switch">
-            <input type="checkbox" onclick="show(this)">
+            <input type="checkbox" onclick="show()">
             <span class="slider round"></span>
         </label>
         <p>동작인식 OFF</p><p style="display:none;">동작인식 ON</p>
@@ -75,14 +75,14 @@
             } 
             
         }
-        async function show(element){
+        async function show(){
             //on off function to show or not show user cam 
             //used for on/off switch
             var face = document.getElementById("canvas");
-            if (element) {
-                face.style.display = "block";
-            } else{
+            if (face.style.display === "block") {
                 face.style.display = "none";
+            } else{
+                face.style.display = "block";
             }
         }
 
