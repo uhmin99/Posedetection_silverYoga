@@ -28,7 +28,8 @@
             <span class="slider round"></span>
         </label>
         <p>동작인식 ON</p><p style="display:none;">동작인식 OFF</p>
-        <div><canvas id="canvas"></canvas></div>
+        <div class="loader"></div>
+        <div><canvas id="canvas" style="display: none;"></canvas></div>
         <div id="label-container"></div>
     </div>
     <!-- Optional JavaScript -->
@@ -155,6 +156,13 @@
         var check = $("input[type='checkbox']");
         check.click(function(){
         $("p").toggle();});
+
+        var _showPage = function(){
+            var loader = $("div.loader");
+            var container = $("div.container");
+            loader.css("display", "none");
+            container.css("display","block");
+        };
 
     </script>
 
