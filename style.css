@@ -201,7 +201,7 @@ body {
 
   .loader {
     position: absolute;
-    left: 13%;
+    left: 20%;
     top: 50%;
     z-index: 1;
     width: 150px;
