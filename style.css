@@ -159,6 +159,7 @@ body {
   
   .slider:before {
 	position: absolute;
+	top: 10%;
 	content: "";
 	height: 26px;
 	width: 26px;
