@@ -52,7 +52,9 @@
         // the link to your model provided by Teachable Machine export panel
         const URL = "./my_model/";
         let model, webcam, ctx, labelContainer, maxPredictions;
+        self.setTimeout(hideLoading, 2500);
         init();
+        
 
         async function init() {
             const modelURL = URL + "model.json";
@@ -154,9 +156,10 @@
         }
 
         function hideLoading(){
-            document.getElementById("loader").style.display ="none";
+            var loader = document.getElementById("loader");
+            loader.style.display ="none";
         }
-        self.setTimeout("hideLoading()",2500);
+        
 
     </script>
 
