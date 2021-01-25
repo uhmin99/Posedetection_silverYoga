@@ -93,9 +93,11 @@
             if (element.checked) {
                 face.style.display = "block";
                 percent.style.display = "block";
+                webcam.play();
             } else{
                 face.style.display = "none";
                 percent.style.display = "none";
+                webcam.pause();
             }
         }
 
