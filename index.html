@@ -91,15 +91,15 @@
             var face = document.getElementById("canvas");
             var percent = document.getElementById("label-container")
             if (element.checked) {
-                face.style.display = "block";
-                percent.style.display = "block";
                 await webcam.setup();
                 await webcam.play();
+                face.style.display = "block";
+                percent.style.display = "block";
             } else{
-                face.style.display = "none";
-                percent.style.display = "none";
                 await webcam.setup();
                 await webcam.pause();
+                face.style.display = "none";
+                percent.style.display = "none";
             }
         }
 
