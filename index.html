@@ -94,12 +94,12 @@
                 face.style.display = "block";
                 percent.style.display = "block";
                 await webcam.setup();
-                webcam.play();
+                await webcam.play();
             } else{
                 face.style.display = "none";
                 percent.style.display = "none";
                 await webcam.setup();
-                webcam.pause();
+                await webcam.pause();
             }
         }
 
