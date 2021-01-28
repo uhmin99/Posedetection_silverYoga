@@ -4,10 +4,14 @@ https://silversquat.netlify.app/
 실버요가 앱에서 사용하는 동작인식 시스템이다.
 
 실시간으로 동작을 인식해서 동작의 정확도를 알려준다.
+
 신체에 있는 16개의 key값을 인식하여 정확도를 산출한다.
 
+
 Google Creative team의 Teachable Machine을 이용해서 구현했다.
+
 (https://teachablemachine.withgoogle.com/)
+
 
 Teachable Machine(이하 TM)의 포즈 인식 기능을 이용하여 스쿼트 자세의 정확도를 판별하도록 했다.
 
