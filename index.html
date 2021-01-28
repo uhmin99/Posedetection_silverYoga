@@ -118,10 +118,6 @@
             } else if (prediction[1].probability.toFixed(2) == 1.00) {
                 status = "squat"
             } else if (prediction[2].probability.toFixed(2) == 1.00) {
-                if (status == "squat" || status == "stand") {
-                    var audio = new Audio('bent.mp3');
-                    audio.play();
-                }
                 status = "wrong"
             }
             for (let i = 0; i < maxPredictions; i++) {
